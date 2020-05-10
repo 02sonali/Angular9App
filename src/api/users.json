@@ -1,0 +1,4 @@
+[
+    {"username":"admin", "password":"admin", "firstName":"Admin", "lastName":"", "address": {"street":"", "city":"", "state": "", "zip": ""}},
+    {"username":"sonali", "password":"abc123", "firstName":"Sonali", "lastName":"Gupta", "address": {"street":"", "city":"", "state": "", "zip": ""}}
+]

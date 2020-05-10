@@ -1,0 +1,13 @@
+.product-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(61, 60, 60, 0.8);
+    cursor: default;
+    color: #cccccc;
+    font-size: 20px;
+    text-align: center;
+    padding: 50% 0;
+    font-weight: bold;
+}

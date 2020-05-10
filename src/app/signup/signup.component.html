@@ -1,0 +1,38 @@
+<!-- Example of a reactive form -->
+
+<div class="container">
+    <h4> Signup </h4>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input name="firstName" type="text" class="form-control" formControlName="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" formControlName="lastName">
+      </div>
+      <div formGroupName="address">
+          <h6>Address</h6>
+          <label>
+            Street:
+            <input type="text" formControlName="street">
+          </label>
+        
+          <label>
+            City:
+            <input type="text" formControlName="city">
+          </label>
+          
+          <label>
+            State:
+            <input type="text" formControlName="state">
+          </label>
+        
+          <label>
+            Zip Code:
+            <input type="text" formControlName="zip">
+          </label>
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="!profileForm.valid">Submit</button>
+    </form>
+</div>

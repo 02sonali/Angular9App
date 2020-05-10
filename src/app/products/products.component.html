@@ -1,0 +1,40 @@
+<div>
+    <app-search (searchEvent)="onSearch($event)"></app-search>
+    <!-- <button class="btn btn-secondary" (click)="search.reset()">Reset</button> -->
+    <!-- <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let product of filteredProducts'>
+                <td>{{product.id}}</td>
+                <td><a [routerLink]="['/products', product.id]">{{product.name}}</a></td>
+            </tr>
+        </tbody>
+    </table> -->
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col mt-4" *ngFor='let product of filteredProducts'>
+          <div class="card cur-hand" style="width: 14rem;">
+            <div  [routerLink]="['/products', product.id]" [productHighlight]='product.availableQuantity'>
+              <img src="../../assets/images/toolbox-logo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{product.name | titlecase }}</h5>
+                <p class="card-text">
+                  <span>Rs. {{product.price | number:'0.2-2'}}</span><br>
+                  <span>Available: {{product.availableQuantity | productPipes }}</span>
+                </p>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+            <div class="product-overlay" *ngIf='product.availableQuantity<=0'> Not Available </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    
+</div>

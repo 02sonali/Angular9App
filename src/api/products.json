@@ -1,0 +1,14 @@
+[
+    { "id": 1, "name": "axe", "availableQuantity": 6, "status": "active", "price": 250, "description": "An axe is an implement that has been used for millennia to shape, split and cut wood, to harvest timber, as a weapon, and as a ceremonial or heraldic symbol. The axe has many forms and specialised uses but generally consists of an axe head with a handle, or helve. "
+    },
+    { "id": 2, "name": "hammer", "availableQuantity": 100, "status": "active", "price": 300, "description": "A hammer is a tool consisting of a weighted head fixed to a long handle that is swung to deliver an impact to a small area of an object. This can be, for example, to drive nails into wood, to shape metal, or to crush rock. Hammers are used for a we range of driving, shaping, and breaking applications."
+    },
+    { "id": 3, "name": "chisel","availableQuantity": 0, "status": "inactive", "price": 400, "description": "A chisel is a tool with a characteristically shaped cutting edge of blade on its end, for carving or cutting a hard material such as wood, stone, or metal by hand, struck with a mallet, or mechanical power. The handle and blade of some types of chisel are made of metal or of wood with a sharp edge in it."
+    },
+    { "id": 4, "name": "axe2", "availableQuantity": 0, "status": "active", "price": 250, "description": "An axe is an implement that has been used for millennia to shape, split and cut wood, to harvest timber, as a weapon, and as a ceremonial or heraldic symbol. The axe has many forms and specialised uses but generally consists of an axe head with a handle, or helve. "
+    },
+    { "id": 5, "name": "hammer2", "availableQuantity": 100, "status": "active", "price": 300, "description": "A hammer is a tool consisting of a weighted head fixed to a long handle that is swung to deliver an impact to a small area of an object. This can be, for example, to drive nails into wood, to shape metal, or to crush rock. Hammers are used for a we range of driving, shaping, and breaking applications."
+    },
+    { "id": 6, "name": "chisel2","availableQuantity": 500, "status": "inactive", "price": 400, "description": "A chisel is a tool with a characteristically shaped cutting edge of blade on its end, for carving or cutting a hard material such as wood, stone, or metal by hand, struck with a mallet, or mechanical power. The handle and blade of some types of chisel are made of metal or of wood with a sharp edge in it."
+    }
+]

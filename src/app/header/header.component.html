@@ -1,0 +1,16 @@
+<nav class='navbar navbar-expand navbar-light bg-light'>
+    <a class='navbar-brand' [routerLink]="['/welcome']">{{appName}}</a>
+    <ul class='nav nav-pills mr-auto'>
+        <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/products']">Product List</a></li>
+        <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/register-product']" *ngIf="isLoggedIn">Register Product</a></li>
+    </ul>
+    <div class="my-2 my-lg-0" *ngIf="isLoggedIn">
+        <a class='nav-link' routerLinkActive='active' [routerLink]="['/cart']">My Cart</a>
+    </div>
+    <div class="my-2 my-lg-0" *ngIf="!isLoggedIn">
+        <a class='nav-link' routerLinkActive='active' [routerLink]="['/login']">Login</a>
+    </div>
+    <div class="my-2 my-lg-0" *ngIf="isLoggedIn">
+        <a class='nav-link' href="#" (click)='logout()'>Logout</a>
+    </div>
+</nav>
